@@ -1,0 +1,4 @@
+https://example.com/api/data1
+https://example.com/api/data2
+https://httpbin.org/json
+https://badurl.example.com
