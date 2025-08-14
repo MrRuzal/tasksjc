@@ -39,7 +39,8 @@ async def fetch_url(
             ) as response:
                 if response.status == 200:
                     try:
-                        content = await response.json()
+                        text = await response.text()
+                        content = json.loads(text)
                         return {"url": url, "content": content}
                     except Exception:
                         return None
